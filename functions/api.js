@@ -168,7 +168,7 @@ router.get('/news/:newspaperId', async (req, res) => {
     }
 });
 
-app.use('/.netlify/functions/api', router)
+app.use('/api/', router)
 
 module.exports.handler = serverless(app);
 // app.listen(PORT, ()=> console.log(`Server running on port ${PORT} `));
